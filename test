@@ -12,7 +12,7 @@ Highcharts.chart('container', {
       }
     }
   },
-
+shivam
   pane: {
     startAngle: -90,
     endAngle: 270,
