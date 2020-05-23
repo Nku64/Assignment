@@ -1,0 +1,103 @@
+
+Highcharts.chart('container', {
+
+  chart: {
+    type: 'solidgauge',
+    events: {
+      render() {
+        let chart = this,
+          label1 = chart.series[0].dataLabelsGroup,
+          label2 = chart.series[1].dataLabelsGroup;
+
+      }
+    }
+  },
+
+  pane: {
+    startAngle: -90,
+    endAngle: 270,
+    background: [{
+     
+      innerRadius: '100%',
+      borderWidth: '0'
+    }, {
+      outerRadius: '62%',
+      innerRadius: '50%',
+      borderWidth: 0
+    }]
+  },
+
+  yAxis: {
+    min: 0,
+    max: 100,
+    lineWidth: 0,
+    tickPositions: []
+  },
+
+  plotOptions: {
+    solidgauge: {
+      dataLabels: {
+        enabled: true,
+        verticalAlign: 'middle'
+      },
+    }
+  },
+
+  series: [ {
+    data: [{
+      color: Highcharts.getOptions().colors[2],
+      radius: '62%',
+      innerRadius: '100%',
+      y: 10,
+      dataLabels: {
+        format: '{y}%',
+        borderWidth: 0,
+        style: {
+          fontSize: '15px'
+        }
+      }
+    }]
+  }]
+});
+
+
+
+remove width of botth div
+ 
+singe tupple
+<div style="/* white-space: nowrap; */border: 1px solid #EBECF0;border-radius: 10px;margin-right: 10px;padding: 5px;height: fit-content;"><img class="PropertyRes__resWidth" src="https://mediacdn.99acres.com/7945/13/158913567O-1549288161-DEALER_2027513_PHOTO.jpeg"><div class="PropertyRes__number display_l_bold">12</div><div class="caption_subdued_large PropertyRes__whiteSpace">Brokers/dealers interested</div><div class="labels_semiBold PropertyRes__viewDetails">View details <i class="iconS_Common_24 icon_arrowRight"></i></div></div>
+
+
+
+bgcardContainer
+background-color: #FFFBF3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* display: inline-flex; */
+    position: relative;
+    /* padding: 37px 0 16px 24px; */
+    white-space: nowrap;
+    /* height: 205px; */
+    /* white-space: nowrap; */
+    overflow-y: hidden;
+    overflow-x: auto;
+
+
+
+
+
+    .xidSliderWrap, .xidSliderWrap > div{
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling:touch;
+}
+
+.xidSliderWrap::-webkit-scrollbar, .xidSliderWrap > div::-webkit-scrollbar {
+height:0;width:0!important;
+  display: none; background: transparent;display:none;overflow:hidden;}
+
+.xidSliderWrap::-webkit-scrollbar-thumb , .xidSliderWrap > div::-webkit-scrollbar-thumb,.xidSliderWrap::-webkit-scrollbar-track , .xidSliderWrap > div::-webkit-scrollbar-track{
+    background:transparent;overflow:hidden;display:none;
+}
