@@ -1,0 +1,8 @@
+git init (provide git environment in folder)
+git add . or file name (for add file which is in the folder)
+git diff file name (to show what is modified)
+git commit -m "your message"  (for ready to upload git server)
+git branch (to check currently in which btanch by default master)
+git push origin master (to push code or data in branch)
+
+
